@@ -1,0 +1,497 @@
+INFO: kbplacer_plugin_action.py:73: Plugin version: 0.18
+INFO: kbplacer_plugin_action.py:74: Python version: '3.11.5 (main, Nov  6 2025, 07:48:09) [MSC v.1944 64 bit (AMD64)]'
+INFO: kbplacer_plugin_action.py:75: KiCad version: 9.0.7 with 4.2.2 msw (phoenix) wxWidgets 3.2.8
+INFO: kbplacer_dialog.py:799: Language: en
+INFO: kbplacer_plugin_action.py:83: GUI state: {"layout_path": "C:\\Users\\Jubak\\Downloads\\keyboard-layout (2).json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "MX{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": "", "start_index": 1}, "enable_diode_placement": false, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Default", "position": {"x": 5.08, "y": 4.0, "orientation": 90.0, "side": "Back"}, "template_path": "", "start_index": -1}, "additional_elements": [{"annotation_format": "C-RGB{}", "position_option": "Custom", "position": {"x": -4.8, "y": 4.35, "orientation": 0.0, "side": "Back"}, "template_path": "", "start_index": -1}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0, "layout_offset": null}
+DEBUG: key_placer.py:144: Switches by nets: defaultdict(<class 'list'>, {frozenset({'GP13', 'GP1'}): ['MX1'], frozenset({'GP20', 'GP12'}): ['MX96'], frozenset({'GP20', 'GP11'}): ['MX95'], frozenset({'GP20', 'GP10'}): ['MX94'], frozenset({'GP20', 'GP9'}): ['MX93'], frozenset({'GP20', 'GP8'}): ['MX92'], frozenset({'GP20', 'GP7'}): ['MX91'], frozenset({'GP20', 'GP6'}): ['MX90'], frozenset({'GP20', 'GP5'}): ['MX89'], frozenset({'GP20', 'GP4'}): ['MX88'], frozenset({'GP20', 'GP3'}): ['MX87'], frozenset({'GP2', 'GP20'}): ['MX86'], frozenset({'GP19', 'GP12'}): ['MX84'], frozenset({'GP19', 'GP11'}): ['MX83'], frozenset({'GP19', 'GP10'}): ['MX82'], frozenset({'GP19', 'GP9'}): ['MX81'], frozenset({'GP19', 'GP8'}): ['MX80'], frozenset({'GP19', 'GP7'}): ['MX79'], frozenset({'GP19', 'GP6'}): ['MX78'], frozenset({'GP19', 'GP5'}): ['MX77'], frozenset({'GP19', 'GP4'}): ['MX76'], frozenset({'GP19', 'GP3'}): ['MX75'], frozenset({'GP2', 'GP19'}): ['MX74'], frozenset({'GP19', 'GP1'}): ['MX73'], frozenset({'GP18', 'GP12'}): ['MX72'], frozenset({'GP18', 'GP11'}): ['MX71'], frozenset({'GP10', 'GP18'}): ['MX70'], frozenset({'GP9', 'GP18'}): ['MX69'], frozenset({'GP18', 'GP8'}): ['MX68'], frozenset({'GP7', 'GP18'}): ['MX67'], frozenset({'GP6', 'GP18'}): ['MX66'], frozenset({'GP5', 'GP18'}): ['MX65'], frozenset({'GP4', 'GP18'}): ['MX64'], frozenset({'GP3', 'GP18'}): ['MX63'], frozenset({'GP2', 'GP18'}): ['MX62'], frozenset({'GP1', 'GP18'}): ['MX61'], frozenset({'GP12', 'GP17'}): ['MX60'], frozenset({'GP11', 'GP17'}): ['MX59'], frozenset({'GP10', 'GP17'}): ['MX58'], frozenset({'GP9', 'GP17'}): ['MX57'], frozenset({'GP8', 'GP17'}): ['MX56'], frozenset({'GP7', 'GP17'}): ['MX55'], frozenset({'GP6', 'GP17'}): ['MX54'], frozenset({'GP5', 'GP17'}): ['MX53'], frozenset({'GP4', 'GP17'}): ['MX52'], frozenset({'GP3', 'GP17'}): ['MX51'], frozenset({'GP2', 'GP17'}): ['MX50'], frozenset({'GP1', 'GP17'}): ['MX49'], frozenset({'GP16', 'GP12'}): ['MX48'], frozenset({'GP16', 'GP11'}): ['MX47'], frozenset({'GP16', 'GP10'}): ['MX46'], frozenset({'GP16', 'GP9'}): ['MX45'], frozenset({'GP16', 'GP8'}): ['MX44'], frozenset({'GP16', 'GP7'}): ['MX43'], frozenset({'GP16', 'GP6'}): ['MX42'], frozenset({'GP16', 'GP5'}): ['MX41'], frozenset({'GP16', 'GP4'}): ['MX40'], frozenset({'GP16', 'GP3'}): ['MX39'], frozenset({'GP16', 'GP2'}): ['MX38'], frozenset({'GP16', 'GP1'}): ['MX37'], frozenset({'GP12', 'GP15'}): ['MX36'], frozenset({'GP11', 'GP15'}): ['MX35'], frozenset({'GP10', 'GP15'}): ['MX34'], frozenset({'GP9', 'GP15'}): ['MX33'], frozenset({'GP8', 'GP15'}): ['MX32'], frozenset({'GP7', 'GP15'}): ['MX31'], frozenset({'GP6', 'GP15'}): ['MX30'], frozenset({'GP5', 'GP15'}): ['MX29'], frozenset({'GP4', 'GP15'}): ['MX28'], frozenset({'GP3', 'GP15'}): ['MX27'], frozenset({'GP2', 'GP15'}): ['MX26'], frozenset({'GP1', 'GP15'}): ['MX25'], frozenset({'GP14', 'GP12'}): ['MX24'], frozenset({'GP14', 'GP11'}): ['MX23'], frozenset({'GP14', 'GP10'}): ['MX22'], frozenset({'GP14', 'GP9'}): ['MX21'], frozenset({'GP14', 'GP8'}): ['MX20'], frozenset({'GP14', 'GP7'}): ['MX19'], frozenset({'GP14', 'GP6'}): ['MX18'], frozenset({'GP14', 'GP5'}): ['MX17'], frozenset({'GP14', 'GP4'}): ['MX16'], frozenset({'GP14', 'GP3'}): ['MX15'], frozenset({'GP14', 'GP2'}): ['MX14'], frozenset({'GP14', 'GP1'}): ['MX13'], frozenset({'GP13', 'GP12'}): ['MX12'], frozenset({'GP13', 'GP11'}): ['MX11'], frozenset({'GP13', 'GP10'}): ['MX10'], frozenset({'GP13', 'GP9'}): ['MX9'], frozenset({'GP13', 'GP8'}): ['MX8'], frozenset({'GP13', 'GP7'}): ['MX7'], frozenset({'GP13', 'GP6'}): ['MX6'], frozenset({'GP13', 'GP4'}): ['MX4'], frozenset({'GP13', 'GP3'}): ['MX3'], frozenset({'GP2', 'GP13'}): ['MX2'], frozenset({'GP13', 'GP5'}): ['MX5'], frozenset({'GP20', 'GP1'}): ['MX85']})
+DEBUG: key_placer.py:148: Diodes by switch: {'MX96': ['D96'], 'MX95': ['D95'], 'MX94': ['D94'], 'MX93': ['D93'], 'MX92': ['D92'], 'MX91': ['D91'], 'MX90': ['D90'], 'MX89': ['D89'], 'MX88': ['D88'], 'MX87': ['D87'], 'MX86': ['D86'], 'MX85': ['D85'], 'MX84': ['D84'], 'MX83': ['D83'], 'MX82': ['D82'], 'MX81': ['D81'], 'MX80': ['D80'], 'MX79': ['D79'], 'MX78': ['D78'], 'MX77': ['D77'], 'MX76': ['D76'], 'MX75': ['D75'], 'MX74': ['D74'], 'MX73': ['D73'], 'MX72': ['D72'], 'MX71': ['D71'], 'MX70': ['D70'], 'MX69': ['D69'], 'MX68': ['D68'], 'MX67': ['D67'], 'MX66': ['D66'], 'MX65': ['D65'], 'MX64': ['D64'], 'MX63': ['D63'], 'MX62': ['D62'], 'MX61': ['D61'], 'MX60': ['D60'], 'MX59': ['D59'], 'MX58': ['D58'], 'MX57': ['D57'], 'MX56': ['D56'], 'MX55': ['D55'], 'MX54': ['D54'], 'MX53': ['D53'], 'MX52': ['D52'], 'MX51': ['D51'], 'MX50': ['D50'], 'MX49': ['D49'], 'MX48': ['D48'], 'MX47': ['D47'], 'MX46': ['D46'], 'MX45': ['D45'], 'MX44': ['D44'], 'MX43': ['D43'], 'MX42': ['D42'], 'MX41': ['D41'], 'MX40': ['D40'], 'MX39': ['D39'], 'MX38': ['D38'], 'MX37': ['D37'], 'MX36': ['D36'], 'MX35': ['D35'], 'MX34': ['D34'], 'MX33': ['D33'], 'MX32': ['D32'], 'MX31': ['D31'], 'MX30': ['D30'], 'MX29': ['D29'], 'MX28': ['D28'], 'MX27': ['D27'], 'MX26': ['D26'], 'MX25': ['D25'], 'MX24': ['D24'], 'MX23': ['D23'], 'MX22': ['D22'], 'MX21': ['D21'], 'MX20': ['D20'], 'MX19': ['D19'], 'MX18': ['D18'], 'MX17': ['D17'], 'MX16': ['D16'], 'MX15': ['D15'], 'MX14': ['D14'], 'MX13': ['D13'], 'MX12': ['D12'], 'MX11': ['D11'], 'MX10': ['D10'], 'MX9': ['D9'], 'MX8': ['D8'], 'MX7': ['D7'], 'MX6': ['D6'], 'MX1': ['D1'], 'MX4': ['D4'], 'MX2': ['D2'], 'MX5': ['D5'], 'MX3': ['D3']}
+DEBUG: board_modifier.py:73: Searching for MX1 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+INFO: key_placer.py:625: Looking for connection template between MX1 and other elements
+DEBUG: board_modifier.py:132: Getting MX1 footprint position: (95250000, 38100000)
+INFO: key_placer.py:669: Got connection template: 
+INFO: kle_serial.py:1038: User layout: [[{'x': 3.25}, 'Esc', {'x': 1}, 'F1', 'F2', 'F3', 'F4', {'x': 0.5}, 'F5', 'F6', 'F7', 'F8', {'x': 0.5}, 'F9', 'F10', 'F11', 'F12', {'x': 0.25}, 'PrtSc', 'Scroll Lock', 'Pause\nBreak'], [{'y': 0.5, 'x': 3.25}, '~\n`', '!\n1', '@\n2', '#\n3', '$\n4', '%\n5', '^\n6', '&\n7', '*\n8', '(\n9', ')\n0', '_\n-', '+\n=', '|\n\\', 'Back Space', {'x': 0.25}, 'Insert', 'Home', 'PgUp'], [{'x': 3.25, 'w': 1.5}, 'Tab', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{\n[', '}\n]', {'a': 7, 'w': 1.5}, '', {'x': 0.25, 'a': 4}, 'Delete', 'End', 'PgDn'], [{'c': '#00bfff', 'w': 1.25, 'w2': 1.75, 'l': True}, 'Caps Lock', {'x': 2, 'w': 1.75}, 'Caps Lock', {'c': '#cccccc'}, 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':\n;', '"\n\'', {'a': 7, 'w': 2.25}, ''], [{'x': 3.25, 'a': 4, 'w': 2.25}, 'Shift', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<\n,', '>\n.', '?\n/', {'w': 2.75}, 'Shift', {'x': 1.25}, '↑'], [{'x': 3.25, 'c': '#3bca4d', 'w': 1.25}, 'Ctrl', {'w': 1.25}, 'Win', {'w': 1.25}, 'Alt', {'a': 7, 'w': 6.25}, '', {'a': 4, 'w': 1.25}, 'Alt', {'w': 1.25}, 'Win', {'w': 1.25}, 'Menu', {'w': 1.25}, 'Ctrl', {'x': 0.25, 'c': '#cccccc'}, '←', '↓', '→'], [{'y': 1, 'x': 3.25, 'c': '#3bca4d', 'w': 1.5}, 'Ctrl', 'Win', {'w': 1.5}, 'Alt', {'a': 7, 'w': 7}, '', {'a': 4, 'w': 1.5}, 'Alt', 'Win', {'w': 1.5}, 'Ctrl']]
+DEBUG: key_placer.py:757: Using key 1U distance: (19.05, 19.05) mm
+DEBUG: key_placer.py:775: Layout offset: (23812500, 28575000)
+DEBUG: kle_serial.py:1132: Layout with: x_ortholinear_keys=32, y_ortholinear_keys=16, rotated_keys=0, encoders=0, iso_enters=0 and unrecognized_shape_keys=1
+DEBUG: kle_serial.py:1157: Layout tagged: [<KeyboardTag.ROW_STAGGERED: 2>, <KeyboardTag.WITH_UNRECOGNIZED_KEY_SHAPE: 6>]
+DEBUG: board_modifier.py:119: Setting MX1 footprint position: (95250000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX2 footprint position: (133350000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX3 footprint position: (152400000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX4 footprint position: (171450000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX5 footprint position: (190500000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX6 footprint position: (219075000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX7 footprint position: (238125000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX8 footprint position: (257175000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX9 footprint position: (276225000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX10 footprint position: (304800000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX11 footprint position: (323850000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX12 footprint position: (342900000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX13 footprint position: (361950000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX14 footprint position: (385762500, 38100000)
+DEBUG: board_modifier.py:119: Setting MX15 footprint position: (404812500, 38100000)
+DEBUG: board_modifier.py:119: Setting MX16 footprint position: (423862500, 38100000)
+DEBUG: board_modifier.py:119: Setting MX17 footprint position: (95250000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX18 footprint position: (114300000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX19 footprint position: (133350000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX20 footprint position: (152400000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX21 footprint position: (171450000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX22 footprint position: (190500000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX23 footprint position: (209550000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX24 footprint position: (228600000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX25 footprint position: (247650000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX26 footprint position: (266700000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX27 footprint position: (285750000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX28 footprint position: (304800000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX29 footprint position: (323850000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX30 footprint position: (342900000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX31 footprint position: (361950000, 66675000)
+DEBUG: board_modifier.py:119: Setting MX32 footprint position: (385762500, 66675000)
+DEBUG: board_modifier.py:119: Setting MX33 footprint position: (404812500, 66675000)
+DEBUG: board_modifier.py:119: Setting MX34 footprint position: (423862500, 66675000)
+DEBUG: board_modifier.py:119: Setting MX35 footprint position: (100012500, 85725000)
+DEBUG: board_modifier.py:119: Setting MX36 footprint position: (123825000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX37 footprint position: (142875000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX38 footprint position: (161925000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX39 footprint position: (180975000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX40 footprint position: (200025000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX41 footprint position: (219075000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX42 footprint position: (238125000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX43 footprint position: (257175000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX44 footprint position: (276225000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX45 footprint position: (295275000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX46 footprint position: (314325000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX47 footprint position: (333375000, 85725000)
+DEBUG: board_modifier.py:119: Setting MX48 footprint position: (357187500, 85725000)
+DEBUG: board_modifier.py:119: Setting MX49 footprint position: (385762500, 85725000)
+DEBUG: board_modifier.py:119: Setting MX50 footprint position: (404812500, 85725000)
+DEBUG: board_modifier.py:119: Setting MX51 footprint position: (423862500, 85725000)
+DEBUG: board_modifier.py:119: Setting MX52 footprint position: (35718750, 104775000)
+DEBUG: board_modifier.py:119: Setting MX53 footprint position: (102393750, 104775000)
+DEBUG: board_modifier.py:119: Setting MX54 footprint position: (128587500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX55 footprint position: (147637500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX56 footprint position: (166687500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX57 footprint position: (185737500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX58 footprint position: (204787500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX59 footprint position: (223837500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX60 footprint position: (242887500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX61 footprint position: (261937500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX62 footprint position: (280987500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX63 footprint position: (300037500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX64 footprint position: (319087500, 104775000)
+DEBUG: board_modifier.py:119: Setting MX65 footprint position: (350043750, 104775000)
+DEBUG: board_modifier.py:119: Setting MX66 footprint position: (107156250, 123825000)
+DEBUG: board_modifier.py:119: Setting MX67 footprint position: (138112500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX68 footprint position: (157162500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX69 footprint position: (176212500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX70 footprint position: (195262500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX71 footprint position: (214312500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX72 footprint position: (233362500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX73 footprint position: (252412500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX74 footprint position: (271462500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX75 footprint position: (290512500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX76 footprint position: (309562500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX77 footprint position: (345281250, 123825000)
+DEBUG: board_modifier.py:119: Setting MX78 footprint position: (404812500, 123825000)
+DEBUG: board_modifier.py:119: Setting MX79 footprint position: (97631250, 142875000)
+DEBUG: board_modifier.py:119: Setting MX80 footprint position: (121443750, 142875000)
+DEBUG: board_modifier.py:119: Setting MX81 footprint position: (145256250, 142875000)
+DEBUG: board_modifier.py:119: Setting MX82 footprint position: (216693750, 142875000)
+DEBUG: board_modifier.py:119: Setting MX83 footprint position: (288131250, 142875000)
+DEBUG: board_modifier.py:119: Setting MX84 footprint position: (311943750, 142875000)
+DEBUG: board_modifier.py:119: Setting MX85 footprint position: (335756250, 142875000)
+DEBUG: board_modifier.py:119: Setting MX86 footprint position: (359568750, 142875000)
+DEBUG: board_modifier.py:119: Setting MX87 footprint position: (385762500, 142875000)
+DEBUG: board_modifier.py:119: Setting MX88 footprint position: (404812500, 142875000)
+DEBUG: board_modifier.py:119: Setting MX89 footprint position: (423862500, 142875000)
+DEBUG: board_modifier.py:119: Setting MX90 footprint position: (100012500, 180975000)
+DEBUG: board_modifier.py:119: Setting MX91 footprint position: (123825000, 180975000)
+DEBUG: board_modifier.py:119: Setting MX92 footprint position: (147637500, 180975000)
+DEBUG: board_modifier.py:119: Setting MX93 footprint position: (228600000, 180975000)
+DEBUG: board_modifier.py:119: Setting MX94 footprint position: (309562500, 180975000)
+DEBUG: board_modifier.py:119: Setting MX95 footprint position: (333375000, 180975000)
+DEBUG: board_modifier.py:119: Setting MX96 footprint position: (357187500, 180975000)
+INFO: key_placer.py:1188: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.UNCHANGED: 'Unchanged'>, position=ElementPosition(x=5.08, y=4.0, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='', start_index=-1)]
+DEBUG: key_placer.py:934: Placing additional elements for MX1
+DEBUG: board_modifier.py:132: Getting MX1 footprint position: (95250000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB1 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB1 footprint position: (90450000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX96
+DEBUG: board_modifier.py:132: Getting MX96 footprint position: (357187500, 180975000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB96 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB96 footprint position: (352387500, 185325000)
+DEBUG: key_placer.py:934: Placing additional elements for MX95
+DEBUG: board_modifier.py:132: Getting MX95 footprint position: (333375000, 180975000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB95 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB95 footprint position: (328575000, 185325000)
+DEBUG: key_placer.py:934: Placing additional elements for MX94
+DEBUG: board_modifier.py:132: Getting MX94 footprint position: (309562500, 180975000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB94 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB94 footprint position: (304762500, 185325000)
+DEBUG: key_placer.py:934: Placing additional elements for MX93
+DEBUG: board_modifier.py:132: Getting MX93 footprint position: (228600000, 180975000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB93 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB93 footprint position: (223800000, 185325000)
+DEBUG: key_placer.py:934: Placing additional elements for MX92
+DEBUG: board_modifier.py:132: Getting MX92 footprint position: (147637500, 180975000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB92 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB92 footprint position: (142837500, 185325000)
+DEBUG: key_placer.py:934: Placing additional elements for MX91
+DEBUG: board_modifier.py:132: Getting MX91 footprint position: (123825000, 180975000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB91 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB91 footprint position: (119025000, 185325000)
+DEBUG: key_placer.py:934: Placing additional elements for MX90
+DEBUG: board_modifier.py:132: Getting MX90 footprint position: (100012500, 180975000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB90 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB90 footprint position: (95212500, 185325000)
+DEBUG: key_placer.py:934: Placing additional elements for MX89
+DEBUG: board_modifier.py:132: Getting MX89 footprint position: (423862500, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB89 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB89 footprint position: (419062500, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX88
+DEBUG: board_modifier.py:132: Getting MX88 footprint position: (404812500, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB88 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB88 footprint position: (400012500, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX87
+DEBUG: board_modifier.py:132: Getting MX87 footprint position: (385762500, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB87 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB87 footprint position: (380962500, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX86
+DEBUG: board_modifier.py:132: Getting MX86 footprint position: (359568750, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB86 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB86 footprint position: (354768750, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX84
+DEBUG: board_modifier.py:132: Getting MX84 footprint position: (311943750, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB84 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB84 footprint position: (307143750, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX83
+DEBUG: board_modifier.py:132: Getting MX83 footprint position: (288131250, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB83 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB83 footprint position: (283331250, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX82
+DEBUG: board_modifier.py:132: Getting MX82 footprint position: (216693750, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB82 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB82 footprint position: (211893750, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX81
+DEBUG: board_modifier.py:132: Getting MX81 footprint position: (145256250, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB81 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB81 footprint position: (140456250, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX80
+DEBUG: board_modifier.py:132: Getting MX80 footprint position: (121443750, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB80 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB80 footprint position: (116643750, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX79
+DEBUG: board_modifier.py:132: Getting MX79 footprint position: (97631250, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB79 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB79 footprint position: (92831250, 147225000)
+DEBUG: key_placer.py:934: Placing additional elements for MX78
+DEBUG: board_modifier.py:132: Getting MX78 footprint position: (404812500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB78 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB78 footprint position: (400012500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX77
+DEBUG: board_modifier.py:132: Getting MX77 footprint position: (345281250, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB77 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB77 footprint position: (340481250, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX76
+DEBUG: board_modifier.py:132: Getting MX76 footprint position: (309562500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB76 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB76 footprint position: (304762500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX75
+DEBUG: board_modifier.py:132: Getting MX75 footprint position: (290512500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB75 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB75 footprint position: (285712500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX74
+DEBUG: board_modifier.py:132: Getting MX74 footprint position: (271462500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB74 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB74 footprint position: (266662500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX73
+DEBUG: board_modifier.py:132: Getting MX73 footprint position: (252412500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB73 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB73 footprint position: (247612500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX72
+DEBUG: board_modifier.py:132: Getting MX72 footprint position: (233362500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB72 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB72 footprint position: (228562500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX71
+DEBUG: board_modifier.py:132: Getting MX71 footprint position: (214312500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB71 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB71 footprint position: (209512500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX70
+DEBUG: board_modifier.py:132: Getting MX70 footprint position: (195262500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB70 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB70 footprint position: (190462500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX69
+DEBUG: board_modifier.py:132: Getting MX69 footprint position: (176212500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB69 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB69 footprint position: (171412500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX68
+DEBUG: board_modifier.py:132: Getting MX68 footprint position: (157162500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB68 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB68 footprint position: (152362500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX67
+DEBUG: board_modifier.py:132: Getting MX67 footprint position: (138112500, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB67 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB67 footprint position: (133312500, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX66
+DEBUG: board_modifier.py:132: Getting MX66 footprint position: (107156250, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB66 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB66 footprint position: (102356250, 128175000)
+DEBUG: key_placer.py:934: Placing additional elements for MX65
+DEBUG: board_modifier.py:132: Getting MX65 footprint position: (350043750, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB65 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB65 footprint position: (345243750, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX64
+DEBUG: board_modifier.py:132: Getting MX64 footprint position: (319087500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB64 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB64 footprint position: (314287500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX63
+DEBUG: board_modifier.py:132: Getting MX63 footprint position: (300037500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB63 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB63 footprint position: (295237500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX62
+DEBUG: board_modifier.py:132: Getting MX62 footprint position: (280987500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB62 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB62 footprint position: (276187500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX61
+DEBUG: board_modifier.py:132: Getting MX61 footprint position: (261937500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB61 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB61 footprint position: (257137500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX60
+DEBUG: board_modifier.py:132: Getting MX60 footprint position: (242887500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB60 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB60 footprint position: (238087500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX59
+DEBUG: board_modifier.py:132: Getting MX59 footprint position: (223837500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB59 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB59 footprint position: (219037500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX58
+DEBUG: board_modifier.py:132: Getting MX58 footprint position: (204787500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB58 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB58 footprint position: (199987500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX57
+DEBUG: board_modifier.py:132: Getting MX57 footprint position: (185737500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB57 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB57 footprint position: (180937500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX56
+DEBUG: board_modifier.py:132: Getting MX56 footprint position: (166687500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB56 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB56 footprint position: (161887500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX55
+DEBUG: board_modifier.py:132: Getting MX55 footprint position: (147637500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB55 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB55 footprint position: (142837500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX54
+DEBUG: board_modifier.py:132: Getting MX54 footprint position: (128587500, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB54 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB54 footprint position: (123787500, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX53
+DEBUG: board_modifier.py:132: Getting MX53 footprint position: (102393750, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB53 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB53 footprint position: (97593750, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX52
+DEBUG: board_modifier.py:132: Getting MX52 footprint position: (35718750, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB52 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB52 footprint position: (30918750, 109125000)
+DEBUG: key_placer.py:934: Placing additional elements for MX51
+DEBUG: board_modifier.py:132: Getting MX51 footprint position: (423862500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB51 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB51 footprint position: (419062500, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX50
+DEBUG: board_modifier.py:132: Getting MX50 footprint position: (404812500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB50 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB50 footprint position: (400012500, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX49
+DEBUG: board_modifier.py:132: Getting MX49 footprint position: (385762500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB49 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB49 footprint position: (380962500, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX48
+DEBUG: board_modifier.py:132: Getting MX48 footprint position: (357187500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB48 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB48 footprint position: (352387500, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX47
+DEBUG: board_modifier.py:132: Getting MX47 footprint position: (333375000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB47 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB47 footprint position: (328575000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX46
+DEBUG: board_modifier.py:132: Getting MX46 footprint position: (314325000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB46 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB46 footprint position: (309525000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX45
+DEBUG: board_modifier.py:132: Getting MX45 footprint position: (295275000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB45 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB45 footprint position: (290475000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX44
+DEBUG: board_modifier.py:132: Getting MX44 footprint position: (276225000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB44 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB44 footprint position: (271425000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX43
+DEBUG: board_modifier.py:132: Getting MX43 footprint position: (257175000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB43 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB43 footprint position: (252375000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX42
+DEBUG: board_modifier.py:132: Getting MX42 footprint position: (238125000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB42 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB42 footprint position: (233325000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX41
+DEBUG: board_modifier.py:132: Getting MX41 footprint position: (219075000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB41 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB41 footprint position: (214275000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX40
+DEBUG: board_modifier.py:132: Getting MX40 footprint position: (200025000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB40 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB40 footprint position: (195225000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX39
+DEBUG: board_modifier.py:132: Getting MX39 footprint position: (180975000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB39 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB39 footprint position: (176175000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX38
+DEBUG: board_modifier.py:132: Getting MX38 footprint position: (161925000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB38 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB38 footprint position: (157125000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX37
+DEBUG: board_modifier.py:132: Getting MX37 footprint position: (142875000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB37 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB37 footprint position: (138075000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX36
+DEBUG: board_modifier.py:132: Getting MX36 footprint position: (123825000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB36 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB36 footprint position: (119025000, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX35
+DEBUG: board_modifier.py:132: Getting MX35 footprint position: (100012500, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB35 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB35 footprint position: (95212500, 90075000)
+DEBUG: key_placer.py:934: Placing additional elements for MX34
+DEBUG: board_modifier.py:132: Getting MX34 footprint position: (423862500, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB34 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB34 footprint position: (419062500, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX33
+DEBUG: board_modifier.py:132: Getting MX33 footprint position: (404812500, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB33 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB33 footprint position: (400012500, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX32
+DEBUG: board_modifier.py:132: Getting MX32 footprint position: (385762500, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB32 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB32 footprint position: (380962500, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX31
+DEBUG: board_modifier.py:132: Getting MX31 footprint position: (361950000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB31 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB31 footprint position: (357150000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX30
+DEBUG: board_modifier.py:132: Getting MX30 footprint position: (342900000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB30 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB30 footprint position: (338100000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX29
+DEBUG: board_modifier.py:132: Getting MX29 footprint position: (323850000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB29 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB29 footprint position: (319050000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX28
+DEBUG: board_modifier.py:132: Getting MX28 footprint position: (304800000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB28 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB28 footprint position: (300000000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX27
+DEBUG: board_modifier.py:132: Getting MX27 footprint position: (285750000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB27 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB27 footprint position: (280950000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX26
+DEBUG: board_modifier.py:132: Getting MX26 footprint position: (266700000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB26 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB26 footprint position: (261900000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX25
+DEBUG: board_modifier.py:132: Getting MX25 footprint position: (247650000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB25 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB25 footprint position: (242850000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX24
+DEBUG: board_modifier.py:132: Getting MX24 footprint position: (228600000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB24 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB24 footprint position: (223800000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX23
+DEBUG: board_modifier.py:132: Getting MX23 footprint position: (209550000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB23 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB23 footprint position: (204750000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX22
+DEBUG: board_modifier.py:132: Getting MX22 footprint position: (190500000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB22 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB22 footprint position: (185700000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX21
+DEBUG: board_modifier.py:132: Getting MX21 footprint position: (171450000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB21 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB21 footprint position: (166650000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX20
+DEBUG: board_modifier.py:132: Getting MX20 footprint position: (152400000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB20 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB20 footprint position: (147600000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX19
+DEBUG: board_modifier.py:132: Getting MX19 footprint position: (133350000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB19 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB19 footprint position: (128550000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX18
+DEBUG: board_modifier.py:132: Getting MX18 footprint position: (114300000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB18 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB18 footprint position: (109500000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX17
+DEBUG: board_modifier.py:132: Getting MX17 footprint position: (95250000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB17 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB17 footprint position: (90450000, 71025000)
+DEBUG: key_placer.py:934: Placing additional elements for MX16
+DEBUG: board_modifier.py:132: Getting MX16 footprint position: (423862500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB16 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB16 footprint position: (419062500, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX15
+DEBUG: board_modifier.py:132: Getting MX15 footprint position: (404812500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB15 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB15 footprint position: (400012500, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX14
+DEBUG: board_modifier.py:132: Getting MX14 footprint position: (385762500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB14 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB14 footprint position: (380962500, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX13
+DEBUG: board_modifier.py:132: Getting MX13 footprint position: (361950000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB13 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB13 footprint position: (357150000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX12
+DEBUG: board_modifier.py:132: Getting MX12 footprint position: (342900000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB12 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB12 footprint position: (338100000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX11
+DEBUG: board_modifier.py:132: Getting MX11 footprint position: (323850000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB11 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB11 footprint position: (319050000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX10
+DEBUG: board_modifier.py:132: Getting MX10 footprint position: (304800000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB10 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB10 footprint position: (300000000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX9
+DEBUG: board_modifier.py:132: Getting MX9 footprint position: (276225000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB9 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB9 footprint position: (271425000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX8
+DEBUG: board_modifier.py:132: Getting MX8 footprint position: (257175000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB8 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB8 footprint position: (252375000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX7
+DEBUG: board_modifier.py:132: Getting MX7 footprint position: (238125000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB7 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB7 footprint position: (233325000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX6
+DEBUG: board_modifier.py:132: Getting MX6 footprint position: (219075000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB6 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB6 footprint position: (214275000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX4
+DEBUG: board_modifier.py:132: Getting MX4 footprint position: (171450000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB4 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB4 footprint position: (166650000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX3
+DEBUG: board_modifier.py:132: Getting MX3 footprint position: (152400000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB3 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB3 footprint position: (147600000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX2
+DEBUG: board_modifier.py:132: Getting MX2 footprint position: (133350000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB2 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB2 footprint position: (128550000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX5
+DEBUG: board_modifier.py:132: Getting MX5 footprint position: (190500000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB5 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB5 footprint position: (185700000, 42450000)
+DEBUG: key_placer.py:934: Placing additional elements for MX85
+DEBUG: board_modifier.py:132: Getting MX85 footprint position: (335756250, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional C-RGB85 footprint in C:\Users\Jubak\Desktop\First Pass TKL 3\TEST.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C-RGB85 footprint position: (330956250, 147225000)
